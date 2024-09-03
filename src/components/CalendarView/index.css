@@ -1,0 +1,159 @@
+/* CalendarView Container */
+.calendar-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px; /* Optional: sets a maximum width for larger screens */
+    margin: 0 auto; /* Centers the container */
+}
+.calendar-view h1{
+    font-size: 50px;
+}
+/* Calendar Styling */
+.react-calendar {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #ffffff; /* White background for the calendar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px; /* Space between calendar and other elements */
+}
+
+.react-calendar__tile {
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.react-calendar__tile:hover {
+    background-color: #3498db; /* Blue */
+    color: #fff;
+}
+
+.react-calendar__tile--active {
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+}
+
+.react-calendar__tile--hasActive {
+    border: 1px solid #e74c3c; /* Red border for active dates */
+}
+
+/* Header and Navigation Buttons Styling */
+.react-calendar__navigation {
+    display: flex;
+    justify-content: space-between; /* Space out navigation buttons */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.react-calendar__navigation button {
+    background-color: #3498db; /* Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.react-calendar__navigation button:hover {
+    background-color: #2980b9; /* Darker blue */
+}
+
+/* Filter Section */
+.filter {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.filter label {
+    font-size: 1.1rem;
+    color: #34495e; /* Slate gray */
+    margin-right: 10px;
+}
+
+.filter select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Makes select full width of filter section */
+}
+
+.filter select:focus {
+    border-color: #3498db; /* Blue */
+    outline: none;
+}
+
+/* Events Section */
+.events {
+    width: 100%;
+}
+
+.add-event-btn {
+    background-color: #28a745; /* Green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.add-event-btn:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.05);
+}
+
+.add-event-btn:active {
+    transform: scale(0.98);
+}
+
+/* Event Item Styling */
+.event-item {
+    background-color: #ffffff; /* White */
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin-bottom: 2px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Makes event items full width of container */
+}
+
+.event-item:hover {
+    background-color: #eaf4f4; /* Light teal */
+    transform: translateY(-5px);
+}
+
+.event-item h3 {
+    margin: 0;
+    color: #2c3e50; /* Dark blue */
+}
+
+.event-item p {
+    color: #7f8c8d; /* Grayish */
+}
+
+/* Remove underline from links */
+.event-item a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent */
+}
+
+.event-item a:hover {
+    color: #3498db; /* Blue for hover effect */
+}
